@@ -1,959 +1,485 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>PE teacher course</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <style>
-    .dropdown-submenu {
-      position: relative;
-    }
-    .dropdown-submenu .dropdown-menu {
-      top: 0;
-      left: 100%;
-      margin-top: -1px;
-      display: none;
-    }
-    .dropdown-submenu.show > .dropdown-menu {
-      display: block;
-    }
-    .dropdown-menu {
-      border-radius: 10px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-      min-width: 200px;
-    }
-    .dropdown-item:hover {
-      background-color: #f8f9fa;
-    }
-    /* Container to keep buttons side by side with gap */
-    .btn-group-container {
-      display: flex;
-      gap: 15px;
-    }
-  </style>
-</head>
-<body class="p-5 bg-light">
-
-<div class="btn-group-container">
-  <!-- Button 1: 1-50 Pages -->
-  <div class="dropdown">
-    
-    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-      1 - 50 Pages
-    </button>
-    <ul class="dropdown-menu">
-
-      <!-- 1-5 -->
-      <li class="dropdown-submenu">
-        <a href="#" class="dropdown-item submenu-toggle">1 - 5 Page ▸</a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="01.html">Page 01</a></li>
-          <li><a class="dropdown-item" href="02.html">Page 02</a></li>
-          <li><a class="dropdown-item" href="03.html">Page 03</a></li>
-          <li><a class="dropdown-item" href="04.html">Page 04</a></li>
-          <li><a class="dropdown-item" href="05.html">Page 05</a></li>
-        </ul>
-      </li>
-      <!-- 6-10 -->
-      <li class="dropdown-submenu">
-        <a href="#" class="dropdown-item submenu-toggle">6 - 10 Page ▸</a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="06.html">Page 06</a></li>
-          <li><a class="dropdown-item" href="07.html">Page 07</a></li>
-          <li><a class="dropdown-item" href="08.html">Page 08</a></li>
-          <li><a class="dropdown-item" href="09.html">Page 09</a></li>
-          <li><a class="dropdown-item" href="10.html">Page 10</a></li>
-        </ul>
-      </li>
-      <!-- 11-15 -->
-      <li class="dropdown-submenu">
-        <a href="#" class="dropdown-item submenu-toggle">11 - 15 Page ▸</a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="11.html">Page 11</a></li>
-          <li><a class="dropdown-item" href="12.html">Page 12</a></li>
-          <li><a class="dropdown-item" href="13.html">Page 13</a></li>
-          <li><a class="dropdown-item" href="14.html">Page 14</a></li>
-          <li><a class="dropdown-item" href="15.html">Page 15</a></li>
-        </ul>
-      </li>
-      <!-- 16-20 -->
-      <li class="dropdown-submenu">
-        <a href="#" class="dropdown-item submenu-toggle">16 - 20 Page ▸</a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="16.html">Page 16</a></li>
-          <li><a class="dropdown-item" href="17.html">Page 17</a></li>
-          <li><a class="dropdown-item" href="18.html">Page 18</a></li>
-          <li><a class="dropdown-item" href="19.html">Page 19</a></li>
-          <li><a class="dropdown-item" href="20.html">Page 20</a></li>
-        </ul>
-      </li>
-      <!-- 21-25 -->
-      <li class="dropdown-submenu">
-        <a href="#" class="dropdown-item submenu-toggle">21 - 25 Page ▸</a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="21.html">Page 21</a></li>
-          <li><a class="dropdown-item" href="22.html">Page 22</a></li>
-          <li><a class="dropdown-item" href="23.html">Page 23</a></li>
-          <li><a class="dropdown-item" href="24.html">Page 24</a></li>
-          <li><a class="dropdown-item" href="25.html">Page 25</a></li>
-        </ul>
-      </li>
-      <!-- 26-30 -->
-      <li class="dropdown-submenu">
-        <a href="#" class="dropdown-item submenu-toggle">26 - 30 Page ▸</a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="26.html">Page 26</a></li>
-          <li><a class="dropdown-item" href="27.html">Page 27</a></li>
-          <li><a class="dropdown-item" href="28.html">Page 28</a></li>
-          <li><a class="dropdown-item" href="29.html">Page 29</a></li>
-          <li><a class="dropdown-item" href="30.html">Page 30</a></li>
-        </ul>
-      </li>
-      <!-- 31-35 -->
-      <li class="dropdown-submenu">
-        <a href="#" class="dropdown-item submenu-toggle">31 - 35 Page ▸</a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="31.html">Page 31</a></li>
-          <li><a class="dropdown-item" href="32.html">Page 32</a></li>
-          <li><a class="dropdown-item" href="33.html">Page 33</a></li>
-          <li><a class="dropdown-item" href="34.html">Page 34</a></li>
-          <li><a class="dropdown-item" href="35.html">Page 35</a></li>
-        </ul>
-      </li>
-      <!-- 36-40 -->
-      <li class="dropdown-submenu">
-        <a href="#" class="dropdown-item submenu-toggle">36 - 40 Page ▸</a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="36.html">Page 36</a></li>
-          <li><a class="dropdown-item" href="37.html">Page 37</a></li>
-          <li><a class="dropdown-item" href="38.html">Page 38</a></li>
-          <li><a class="dropdown-item" href="40.html">Page 40</a></li>
-        </ul>
-      </li>
-      <!-- 41-45 -->
-      <li class="dropdown-submenu">
-        <a href="#" class="dropdown-item submenu-toggle">41 - 45 Page ▸</a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="41.html">Page 41</a></li>
-          <li><a class="dropdown-item" href="42.html">Page 42</a></li>
-          <li><a class="dropdown-item" href="43.html">Page 43</a></li>
-          <li><a class="dropdown-item" href="44.html">Page 44</a></li>
-          <li><a class="dropdown-item" href="45.html">Page 45</a></li>
-        </ul>
-      </li>
-      <!-- 46-50 -->
-      <li class="dropdown-submenu">
-        <a href="#" class="dropdown-item submenu-toggle">46 - 50 Page ▸</a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="46.html">Page 46</a></li>
-          <li><a class="dropdown-item" href="47.html">Page 47</a></li>
-          <li><a class="dropdown-item" href="48.html">Page 48</a></li>
-          <li><a class="dropdown-item" href="49.html">Page 49</a></li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-
-  <!-- Button 2: 51-100 Pages -->
-  <div class="dropdown">
-    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-      51 - 100 Pages
-    </button>
-    <ul class="dropdown-menu">
-      <!-- 51-55 -->
-      <li class="dropdown-submenu">
-        <a href="#" class="dropdown-item submenu-toggle">51 - 55 Page ▸</a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="51.html">Page 51</a></li>
-          <li><a class="dropdown-item" href="52.html">Page 52</a></li>
-          <li><a class="dropdown-item" href="53.html">Page 53</a></li>
-          <li><a class="dropdown-item" href="54.html">Page 54</a></li>
-          <li><a class="dropdown-item" href="55.html">Page 55</a></li>
-        </ul>
-      </li>
-      <!-- 56-60 -->
-      <li class="dropdown-submenu">
-        <a href="#" class="dropdown-item submenu-toggle">56 - 60 Page ▸</a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="57.html">Page 57</a></li>
-          <li><a class="dropdown-item" href="58.html">Page 58</a></li>
-          <li><a class="dropdown-item" href="59.html">Page 59</a></li>
-          <li><a class="dropdown-item" href="60.html">Page 60</a></li>
-        </ul>
-      </li>
-      <!-- 61-65 -->
-      <li class="dropdown-submenu">
-        <a href="#" class="dropdown-item submenu-toggle">61 - 65 Page ▸</a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="61.html">Page 61</a></li>
-          <li><a class="dropdown-item" href="62.html">Page 62</a></li>
-          <li><a class="dropdown-item" href="63.html">Page 63</a></li>
-        </ul>
-      </li>
-      <!-- 66-70 -->
-      <li class="dropdown-submenu">
-        <a href="#" class="dropdown-item submenu-toggle">66 - 70 Page ▸</a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="66.html">Page 66</a></li>
-          <li><a class="dropdown-item" href="67.html">Page 67</a></li>
-          <li><a class="dropdown-item" href="68.html">Page 68</a></li>
-          <li><a class="dropdown-item" href="69.html">Page 69</a></li>
-          <li><a class="dropdown-item" href="70.html">Page 70</a></li>
-        </ul>
-      </li>
-      <!-- 71-75 -->
-      <li class="dropdown-submenu">
-        <a href="#" class="dropdown-item submenu-toggle">71 - 75 Page ▸</a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="71.html">Page 71</a></li>
-          <li><a class="dropdown-item" href="72.html">Page 72</a></li>
-          <li><a class="dropdown-item" href="73.html">Page 73</a></li>
-          <li><a class="dropdown-item" href="74.html">Page 74</a></li>
-          <li><a class="dropdown-item" href="75.html">Page 75</a></li>
-        </ul>
-      </li>
-      <!-- 76-80 -->
-      <li class="dropdown-submenu">
-        <a href="#" class="dropdown-item submenu-toggle">76 - 80 Page ▸</a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="76.html">Page 76</a></li>
-          <li><a class="dropdown-item" href="77.html">Page 77</a></li>
-          <li><a class="dropdown-item" href="78.html">Page 78</a></li>
-          <li><a class="dropdown-item" href="79.html">Page 79</a></li>
-          <li><a class="dropdown-item" href="80.html">Page 80</a></li>
-        </ul>
-      </li>
-      <!-- 81-85 -->
-      <li class="dropdown-submenu">
-        <a href="#" class="dropdown-item submenu-toggle">81 - 85 Page ▸</a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="81.html">Page 81</a></li>
-          <li><a class="dropdown-item" href="82.html">Page 82</a></li>
-          <li><a class="dropdown-item" href="83.html">Page 83</a></li>
-          <li><a class="dropdown-item" href="84.html">Page 84</a></li>
-          <li><a class="dropdown-item" href="85.html">Page 85</a></li>
-        </ul>
-      </li>
-      <!-- 86-90 -->
-      <li class="dropdown-submenu">
-        <a href="#" class="dropdown-item submenu-toggle">86 - 90 Page ▸</a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="86.html">Page 86</a></li>
-          <li><a class="dropdown-item" href="87.html">Page 87</a></li>
-          <li><a class="dropdown-item" href="88.html">Page 88</a></li>
-          <li><a class="dropdown-item" href="89.html">Page 89</a></li>
-          <li><a class="dropdown-item" href="90.html">Page 90</a></li>
-        </ul>
-      </li>
-      <!-- 91-95 -->
-      <li class="dropdown-submenu">
-        <a href="#" class="dropdown-item submenu-toggle">91 - 95 Page ▸</a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="91.html">Page 91</a></li>
-          <li><a class="dropdown-item" href="92.html">Page 92</a></li>
-          <li><a class="dropdown-item" href="93.html">Page 93</a></li>
-          <li><a class="dropdown-item" href="94.html">Page 94</a></li>
-          <li><a class="dropdown-item" href="95.html">Page 95</a></li>
-        </ul>
-      </li>
-      <!-- 96-100 -->
-      <li class="dropdown-submenu">
-        <a href="#" class="dropdown-item submenu-toggle">96 - 100 Page ▸</a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="96.html">Page 96</a></li>
-          <li><a class="dropdown-item" href="97.html">Page 97</a></li>
-          <li><a class="dropdown-item" href="98.html">Page 98</a></li>
-          <li><a class="dropdown-item" href="99.html">Page 99</a></li>
-          <li><a class="dropdown-item" href="100.html">Page 100</a></li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-
-
-
-  <!-- Button 3: 101-150 Pages -->
-<div class="dropdown">
-  <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-    101 - 150 Pages
-  </button>
-  <ul class="dropdown-menu">
-    <!-- 101-105 -->
-    <li class="dropdown-submenu">
-      <a href="#" class="dropdown-item submenu-toggle">101 - 105 Page ▸</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="101.html">Page 101</a></li>
-        <li><a class="dropdown-item" href="102.html">Page 102</a></li>
-        <li><a class="dropdown-item" href="103.html">Page 103</a></li>
-        <li><a class="dropdown-item" href="104.html">Page 104</a></li>
-        <li><a class="dropdown-item" href="105.html">Page 105</a></li>
-      </ul>
-    </li>
-    <!-- 106-110 -->
-    <li class="dropdown-submenu">
-      <a href="#" class="dropdown-item submenu-toggle">106 - 110 Page ▸</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="106.html">Page 106</a></li>
-        <li><a class="dropdown-item" href="107.html">Page 107</a></li>
-        <li><a class="dropdown-item" href="108.html">Page 108</a></li>
-        <li><a class="dropdown-item" href="109.html">Page 109</a></li>
-        <li><a class="dropdown-item" href="110.html">Page 110</a></li>
-      </ul>
-    </li>
-    <!-- 111-115 -->
-    <li class="dropdown-submenu">
-      <a href="#" class="dropdown-item submenu-toggle">111 - 115 Page ▸</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="111.html">Page 111</a></li>
-        <li><a class="dropdown-item" href="112.html">Page 112</a></li>
-        <li><a class="dropdown-item" href="113.html">Page 113</a></li>
-        <li><a class="dropdown-item" href="114.html">Page 114</a></li>
-        <li><a class="dropdown-item" href="115.html">Page 115</a></li>
-      </ul>
-    </li>
-    <!-- 116-120 -->
-    <li class="dropdown-submenu">
-      <a href="#" class="dropdown-item submenu-toggle">116 - 120 Page ▸</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="116.html">Page 116</a></li>
-        <li><a class="dropdown-item" href="117.html">Page 117</a></li>
-        <li><a class="dropdown-item" href="118.html">Page 118</a></li>
-        <li><a class="dropdown-item" href="119.html">Page 119</a></li>
-        <li><a class="dropdown-item" href="120.html">Page 120</a></li>
-      </ul>
-    </li>
-    <!-- 121-125 -->
-    <li class="dropdown-submenu">
-      <a href="#" class="dropdown-item submenu-toggle">121 - 125 Page ▸</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="121.html">Page 121</a></li>
-        <li><a class="dropdown-item" href="123.html">Page 123</a></li>
-        <li><a class="dropdown-item" href="124.html">Page 124</a></li>
-        <li><a class="dropdown-item" href="125.html">Page 125</a></li>
-      </ul>
-    </li>
-    <!-- 126-130 -->
-    <li class="dropdown-submenu">
-      <a href="#" class="dropdown-item submenu-toggle">126 - 130 Page ▸</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="126.html">Page 126</a></li>
-        <li><a class="dropdown-item" href="127.html">Page 127</a></li>
-        <li><a class="dropdown-item" href="128.html">Page 128</a></li>
-        <li><a class="dropdown-item" href="129.html">Page 129</a></li>
-        <li><a class="dropdown-item" href="130.html">Page 130</a></li>
-      </ul>
-    </li>
-    <!-- 131-135 -->
-    <li class="dropdown-submenu">
-      <a href="#" class="dropdown-item submenu-toggle">131 - 135 Page ▸</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="131.html">Page 131</a></li>
-        <li><a class="dropdown-item" href="132.html">Page 132</a></li>
-        <li><a class="dropdown-item" href="133.html">Page 133</a></li>
-      </ul>
-    </li>
-    <!-- 136-140 -->
-    <li class="dropdown-submenu">
-      <a href="#" class="dropdown-item submenu-toggle">136 - 140 Page ▸</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="136.html">Page 136</a></li>
-        <li><a class="dropdown-item" href="137.html">Page 137</a></li>
-        <li><a class="dropdown-item" href="138.html">Page 138</a></li>
-        <li><a class="dropdown-item" href="139.html">Page 139</a></li>
-        <li><a class="dropdown-item" href="140.html">Page 140</a></li>
-      </ul>
-    </li>
-    <!-- 141-145 -->
-    <li class="dropdown-submenu">
-      <a href="#" class="dropdown-item submenu-toggle">141 - 145 Page ▸</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="141.html">Page 141</a></li>
-        <li><a class="dropdown-item" href="142.html">Page 142</a></li>
-        <li><a class="dropdown-item" href="144.html">Page 144</a></li>
-        <li><a class="dropdown-item" href="145.html">Page 145</a></li>
-      </ul>
-    </li>
-    <!-- 146-150 -->
-    <li class="dropdown-submenu">
-      <a href="#" class="dropdown-item submenu-toggle">146 - 150 Page ▸</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="146.html">Page 146</a></li>
-        <li><a class="dropdown-item" href="147.html">Page 147</a></li>
-        <li><a class="dropdown-item" href="148.html">Page 148</a></li>
-        <li><a class="dropdown-item" href="149.html">Page 149</a></li>
-        <li><a class="dropdown-item" href="150.html">Page 150</a></li>
-      </ul>
-    </li>
-  </ul>
-</div>
-
-
-
-
-
-<!-- Button 4: 151-200 Pages -->
-<div class="dropdown">
-  <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-    151 - 200 Pages
-  </button>
-  <ul class="dropdown-menu">
-    <!-- 151-155 -->
-    <li class="dropdown-submenu">
-      <a href="#" class="dropdown-item submenu-toggle">151 - 155 Page ▸</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="151.html">Page 151</a></li>
-        <li><a class="dropdown-item" href="152.html">Page 152</a></li>
-        <li><a class="dropdown-item" href="153.html">Page 153</a></li>
-        <li><a class="dropdown-item" href="154.html">Page 154</a></li>
-        <li><a class="dropdown-item" href="155.html">Page 155</a></li>
-      </ul>
-    </li>
-    <!-- 156-160 -->
-    <li class="dropdown-submenu">
-      <a href="#" class="dropdown-item submenu-toggle">156 - 160 Page ▸</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="157.html">Page 157</a></li>
-        <li><a class="dropdown-item" href="158.html">Page 158</a></li>
-        <li><a class="dropdown-item" href="159.html">Page 159</a></li>
-        <li><a class="dropdown-item" href="160.html">Page 160</a></li>
-      </ul>
-    </li>
-    <!-- 161-165 -->
-    <li class="dropdown-submenu">
-      <a href="#" class="dropdown-item submenu-toggle">161 - 165 Page ▸</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="161.html">Page 161</a></li>
-        <li><a class="dropdown-item" href="162.html">Page 162</a></li>
-        <li><a class="dropdown-item" href="163.html">Page 163</a></li>
-        <li><a class="dropdown-item" href="164.html">Page 164</a></li>
-        <li><a class="dropdown-item" href="165.html">Page 165</a></li>
-      </ul>
-    </li>
-    <!-- 166-170 -->
-    <li class="dropdown-submenu">
-      <a href="#" class="dropdown-item submenu-toggle">166 - 170 Page ▸</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="166.html">Page 166</a></li>
-        <li><a class="dropdown-item" href="167.html">Page 167</a></li>
-        <li><a class="dropdown-item" href="168.html">Page 168</a></li>
-        <li><a class="dropdown-item" href="169.html">Page 169</a></li>
-        <li><a class="dropdown-item" href="170.html">Page 170</a></li>
-      </ul>
-    </li>
-    <!-- 171-175 -->
-    <li class="dropdown-submenu">
-      <a href="#" class="dropdown-item submenu-toggle">171 - 175 Page ▸</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="171.html">Page 171</a></li>
-        <li><a class="dropdown-item" href="173.html">Page 173</a></li>
-        <li><a class="dropdown-item" href="174.html">Page 174</a></li>
-        <li><a class="dropdown-item" href="175.html">Page 175</a></li>
-      </ul>
-    </li>
-    <!-- 176-180 -->
-    <li class="dropdown-submenu">
-      <a href="#" class="dropdown-item submenu-toggle">176 - 180 Page ▸</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="176.html">Page 176</a></li>
-        <li><a class="dropdown-item" href="177.html">Page 177</a></li>
-        <li><a class="dropdown-item" href="178.html">Page 178</a></li>
-        <li><a class="dropdown-item" href="180.html">Page 180</a></li>
-      </ul>
-    </li>
-    <!-- 181-185 -->
-    <li class="dropdown-submenu">
-      <a href="#" class="dropdown-item submenu-toggle">181 - 185 Page ▸</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="181.html">Page 181</a></li>
-        <li><a class="dropdown-item" href="183.html">Page 183</a></li>
-        <li><a class="dropdown-item" href="184.html">Page 184</a></li>
-        <li><a class="dropdown-item" href="185.html">Page 185</a></li>
-      </ul>
-    </li>
-    <!-- 186-190 -->
-    <li class="dropdown-submenu">
-      <a href="#" class="dropdown-item submenu-toggle">186 - 190 Page ▸</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="186.html">Page 186</a></li>
-        <li><a class="dropdown-item" href="187.html">Page 187</a></li>
-        <li><a class="dropdown-item" href="188.html">Page 188</a></li>
-        <li><a class="dropdown-item" href="189.html">Page 189</a></li>
-        <li><a class="dropdown-item" href="190.html">Page 190</a></li>
-      </ul>
-    </li>
-    <!-- 191-195 -->
-    <li class="dropdown-submenu">
-      <a href="#" class="dropdown-item submenu-toggle">191 - 195 Page ▸</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="191.html">Page 191</a></li>
-        <li><a class="dropdown-item" href="192.html">Page 192</a></li>
-        <li><a class="dropdown-item" href="193.html">Page 193</a></li>
-        <li><a class="dropdown-item" href="194.html">Page 194</a></li>
-        <li><a class="dropdown-item" href="195.html">Page 195</a></li>
-      </ul>
-    </li>
-    <!-- 196-200 -->
-    <li class="dropdown-submenu">
-      <a href="#" class="dropdown-item submenu-toggle">196 - 200 Page ▸</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="196.html">Page 196</a></li>
-        <li><a class="dropdown-item" href="197.html">Page 197</a></li>
-        <li><a class="dropdown-item" href="199.html">Page 199</a></li>
-        <li><a class="dropdown-item" href="200.html">Page 200</a></li>
-      </ul>
-    </li>
-  </ul>
-</div>
-
-
-
-
-
-<!-- Button 5: 201-250 Pages -->
-<div class="dropdown">
-  <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-    201 - 250 Pages
-  </button>
-  <ul class="dropdown-menu">
-    <!-- 201-205 -->
-    <li class="dropdown-submenu">
-      <a href="#" class="dropdown-item submenu-toggle">201 - 205 Page ▸</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="201.html">Page 201</a></li>
-        <li><a class="dropdown-item" href="202.html">Page 202</a></li>
-        <li><a class="dropdown-item" href="203.html">Page 203</a></li>
-        <li><a class="dropdown-item" href="204.html">Page 204</a></li>
-        <li><a class="dropdown-item" href="205.html">Page 205</a></li>
-      </ul>
-    </li>
-    <!-- 206-210 -->
-    <li class="dropdown-submenu">
-      <a href="#" class="dropdown-item submenu-toggle">206 - 210 Page ▸</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="206.html">Page 206</a></li>
-        <li><a class="dropdown-item" href="207.html">Page 207</a></li>
-        <li><a class="dropdown-item" href="208.html">Page 208</a></li>
-        <li><a class="dropdown-item" href="209.html">Page 209</a></li>
-      </ul>
-    </li>
-    <!-- 211-215 -->
-    <li class="dropdown-submenu">
-      <a href="#" class="dropdown-item submenu-toggle">211 - 215 Page ▸</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="211.html">Page 211</a></li>
-        <li><a class="dropdown-item" href="212.html">Page 212</a></li>
-        <li><a class="dropdown-item" href="213.html">Page 213</a></li>
-        <li><a class="dropdown-item" href="214.html">Page 214</a></li>
-        <li><a class="dropdown-item" href="215.html">Page 215</a></li>
-      </ul>
-    </li>
-    <!-- 216-220 -->
-    <li class="dropdown-submenu">
-      <a href="#" class="dropdown-item submenu-toggle">216 - 220 Page ▸</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="216.html">Page 216</a></li>
-        <li><a class="dropdown-item" href="218.html">Page 218</a></li>
-        <li><a class="dropdown-item" href="219.html">Page 219</a></li>
-        <li><a class="dropdown-item" href="220.html">Page 220</a></li>
-      </ul>
-    </li>
-    <!-- 221-225 -->
-    <li class="dropdown-submenu">
-      <a href="#" class="dropdown-item submenu-toggle">221 - 225 Page ▸</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="221.html">Page 221</a></li>
-        <li><a class="dropdown-item" href="222.html">Page 222</a></li>
-        <li><a class="dropdown-item" href="223.html">Page 223</a></li>
-        <li><a class="dropdown-item" href="224.html">Page 224</a></li>
-        <li><a class="dropdown-item" href="225.html">Page 225</a></li>
-      </ul>
-    </li>
-    <!-- 226-230 -->
-    <li class="dropdown-submenu">
-      <a href="#" class="dropdown-item submenu-toggle">226 - 230 Page ▸</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="226.html">Page 226</a></li>
-        <li><a class="dropdown-item" href="227.html">Page 227</a></li>
-        <li><a class="dropdown-item" href="228.html">Page 228</a></li>
-        <li><a class="dropdown-item" href="229.html">Page 229</a></li>
-        <li><a class="dropdown-item" href="230.html">Page 230</a></li>
-      </ul>
-    </li>
-    <!-- 231-235 -->
-    <li class="dropdown-submenu">
-      <a href="#" class="dropdown-item submenu-toggle">231 - 235 Page ▸</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="232.html">Page 232</a></li>
-        <li><a class="dropdown-item" href="233.html">Page 233</a></li>
-        <li><a class="dropdown-item" href="234.html">Page 234</a></li>
-        <li><a class="dropdown-item" href="235.html">Page 235</a></li>
-      </ul>
-    </li>
-    <!-- 236-240 -->
-    <li class="dropdown-submenu">
-      <a href="#" class="dropdown-item submenu-toggle">236 - 240 Page ▸</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="236.html">Page 236</a></li>
-        <li><a class="dropdown-item" href="237.html">Page 237</a></li>
-        <li><a class="dropdown-item" href="239.html">Page 239</a></li>
-        <li><a class="dropdown-item" href="240.html">Page 240</a></li>
-      </ul>
-    </li>
-    <!-- 241-245 -->
-    <li class="dropdown-submenu">
-      <a href="#" class="dropdown-item submenu-toggle">241 - 245 Page ▸</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="241.html">Page 241</a></li>
-        <li><a class="dropdown-item" href="242.html">Page 242</a></li>
-        <li><a class="dropdown-item" href="244.html">Page 244</a></li>
-        <li><a class="dropdown-item" href="245.html">Page 245</a></li>
-      </ul>
-    </li>
-    <!-- 246-250 -->
-    <li class="dropdown-submenu">
-      <a href="#" class="dropdown-item submenu-toggle">246 - 250 Page ▸</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="246.html">Page 246</a></li>
-        <li><a class="dropdown-item" href="247.html">Page 247</a></li>
-        <li><a class="dropdown-item" href="248.html">Page 248</a></li>
-        <li><a class="dropdown-item" href="249.html">Page 249</a></li>
-        <li><a class="dropdown-item" href="250.html">Page 250</a></li>
-      </ul>
-    </li>
-  </ul>
-</div>
-
-
-
-
-<!-- Button 6: 251-300 Pages -->
-<div class="dropdown">
-  <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-    251 - 300 Pages
-  </button>
-  <ul class="dropdown-menu">
-    <!-- 251-255 -->
-    <li class="dropdown-submenu">
-      <a href="#" class="dropdown-item submenu-toggle">251 - 255 Page ▸</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="251.html">Page 251</a></li>
-        <li><a class="dropdown-item" href="252.html">Page 252</a></li>
-        <li><a class="dropdown-item" href="253.html">Page 253</a></li>
-        <li><a class="dropdown-item" href="254.html">Page 254</a></li>
-        <li><a class="dropdown-item" href="255.html">Page 255</a></li>
-      </ul>
-    </li>
-    <!-- 256-260 -->
-    <li class="dropdown-submenu">
-      <a href="#" class="dropdown-item submenu-toggle">256 - 260 Page ▸</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="256.html">Page 256</a></li>
-        <li><a class="dropdown-item" href="257.html">Page 257</a></li>
-        <li><a class="dropdown-item" href="258.html">Page 258</a></li>
-        <li><a class="dropdown-item" href="259.html">Page 259</a></li>
-        <li><a class="dropdown-item" href="260.html">Page 260</a></li>
-      </ul>
-    </li>
-    <!-- 261-265 -->
-    <li class="dropdown-submenu">
-      <a href="#" class="dropdown-item submenu-toggle">261 - 265 Page ▸</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="261.html">Page 261</a></li>
-        <li><a class="dropdown-item" href="262.html">Page 262</a></li>
-        <li><a class="dropdown-item" href="263.html">Page 263</a></li>
-        <li><a class="dropdown-item" href="264.html">Page 264</a></li>
-        <li><a class="dropdown-item" href="265.html">Page 265</a></li>
-      </ul>
-    </li>
-    <!-- 266-270 -->
-    <li class="dropdown-submenu">
-      <a href="#" class="dropdown-item submenu-toggle">266 - 270 Page ▸</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="267.html">Page 267</a></li>
-        <li><a class="dropdown-item" href="268.html">Page 268</a></li>
-        <li><a class="dropdown-item" href="269.html">Page 269</a></li>
-      </ul>
-    </li>
-    <!-- 271-275 -->
-    <li class="dropdown-submenu">
-      <a href="#" class="dropdown-item submenu-toggle">271 - 275 Page ▸</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="271.html">Page 271</a></li>
-        <li><a class="dropdown-item" href="273.html">Page 273</a></li>
-        <li><a class="dropdown-item" href="274.html">Page 274</a></li>
-        <li><a class="dropdown-item" href="275.html">Page 275</a></li>
-      </ul>
-    </li>
-    <!-- 276-280 -->
-    <li class="dropdown-submenu">
-      <a href="#" class="dropdown-item submenu-toggle">276 - 280 Page ▸</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="276.html">Page 276</a></li>
-        <li><a class="dropdown-item" href="277.html">Page 277</a></li>
-        <li><a class="dropdown-item" href="278.html">Page 278</a></li>
-        <li><a class="dropdown-item" href="279.html">Page 279</a></li>
-        <li><a class="dropdown-item" href="280.html">Page 280</a></li>
-      </ul>
-    </li>
-    <!-- 281-285 -->
-    <li class="dropdown-submenu">
-      <a href="#" class="dropdown-item submenu-toggle">281 - 285 Page ▸</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="281.html">Page 281</a></li>
-        <li><a class="dropdown-item" href="282.html">Page 282</a></li>
-        <li><a class="dropdown-item" href="283.html">Page 283</a></li>
-        <li><a class="dropdown-item" href="284.html">Page 284</a></li>
-      </ul>
-    </li>
-    <!-- 286-290 -->
-    <li class="dropdown-submenu">
-      <a href="#" class="dropdown-item submenu-toggle">286 - 290 Page ▸</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="286.html">Page 286</a></li>
-        <li><a class="dropdown-item" href="287.html">Page 287</a></li>
-        <li><a class="dropdown-item" href="288.html">Page 288</a></li>
-        <li><a class="dropdown-item" href="289.html">Page 289</a></li>
-        <li><a class="dropdown-item" href="290.html">Page 290</a></li>
-      </ul>
-    </li>
-    <!-- 291-295 -->
-    <li class="dropdown-submenu">
-      <a href="#" class="dropdown-item submenu-toggle">291 - 295 Page ▸</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="291.html">Page 291</a></li>
-        <li><a class="dropdown-item" href="292.html">Page 292</a></li>
-        <li><a class="dropdown-item" href="293.html">Page 293</a></li>
-        <li><a class="dropdown-item" href="294.html">Page 294</a></li>
-      </ul>
-    </li>
-    <!-- 296-300 -->
-    <li class="dropdown-submenu">
-      <a href="#" class="dropdown-item submenu-toggle">296 - 300 Page ▸</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="296.html">Page 296</a></li>
-        <li><a class="dropdown-item" href="297.html">Page 297</a></li>
-        <li><a class="dropdown-item" href="299.html">Page 299</a></li>
-      </ul>
-    </li>
-  </ul>
-</div>
-
-<!-- Button 5: 201-250 Pages -->
-<div class="dropdown">
-  <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-    PDF Pages
-  </button>
-  <ul class="dropdown-menu">
-    <!-- 201-205 -->
-    <li class="dropdown-submenu">
-      <a href="basketboll.html" class="dropdown-item">Basketboll</a>
-      <a href="volleyball.html" class="dropdown-item">Volleyball</a>
-      <a href="badminton.html" class="dropdown-item">Badminton</a>
-    </li>
-   
-  </ul>
-</div>
-
-  
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-// Click toggle submenu
-  document.querySelectorAll('.submenu-toggle').forEach(toggle => {
-    toggle.addEventListener('click', e => {
-      e.preventDefault();
-      e.stopPropagation();
-
-      const parent = toggle.parentElement;
-
-      // Close all other submenus
-      document.querySelectorAll('.dropdown-submenu').forEach(el => {
-        if(el !== parent) el.classList.remove('show');
-      });
-
-      // Toggle current submenu
-      parent.classList.toggle('show');
-    });
-  });
-
-  // Prevent submenu item click from closing dropdown
-  document.querySelectorAll('.dropdown-submenu .dropdown-item').forEach(item => {
-    item.addEventListener('click', e => {
-      e.stopPropagation();
-    });
-  });
-</script>
-
-<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title> Main Home</title>
-  <!-- Link of css -->
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  <!-- Link of bootstrap -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>دبلوم إعداد معلمي ومعلمات التربية البدنية · SIOSS</title>
+  <meta name="description" content="دبلوم إعداد معلمي ومعلمات التربية البدنية — المنظمة السويدية الدولية للعلوم الرياضية (SIOSS). 21 وحدة في ثلاثة مجالات: الحركة، الحياة في الهواء الطلق، والصحة وأسلوب الحياة.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0c2d57">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
-
- <div class="text-center mb-5">
-  <h1 class="mt-3 main-welcome-title">
-    PE teacher course
-  </h1>
-</div>
-
-<div class="course-card animated-card text-center">
-  <a class="course-link" href="01.html">
-    <img src="assets/img/main-course.png" alt="Course Image">
-    <h2 class="course-title">ددبلوم اعداد معلمي ومعلمات التربية البدنية.</h2>
-  </a>
-</div>
-
-
-<style>
-.one-time-wipe {
-  position: relative;
-  display: inline-block;
-  padding: 12px 24px;
-  margin: 20px auto;
-  border-radius: 10px;
-  background-color: #ffffff;
-  color: #007bff;
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  font-weight: bold;
-  text-decoration: none;
-  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.2);
-  overflow: hidden;
-  z-index: 1;
-  animation: textColorChange 2s ease-in-out 3s infinite alternate;
-}
-
-.one-time-wipe::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background-color: #007bff;
-  z-index: -1;
-  animation: wipeOnce 2s ease-in-out 3s infinite alternate;
-}
-
-@keyframes wipeOnce {
-  to {
-    left: 0%;
-  }
-}
-
-@keyframes textColorChange {
-  to {
-    color: #ffffff;
-  }
-}
-
-
-@keyframes wipeOnce {
-  to {
-    left: 0%;
-  }
-}
-
-@keyframes textColorChange {
-  to {
-    color: #ffffff;
-  }
-}
-</style>
-
-<style>
-  /* Main Welcome Title */
-  .main-welcome-title {
-    font-size: 2.8rem;
-    font-weight: bold;
-    color: #fff;
-    background: linear-gradient(90deg, #4e54c8, #8f94fb);
-    padding: 25px 20px;
-    border-radius: 20px;
-    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
-    animation: fadeSlideIn 1s ease forwards;
-  }
-
-  /* Course Card Styling - Bigger and Bolder */
-  .course-card {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #ffffff;
-    border-radius: 25px;
-    box-shadow: 0 14px 40px rgba(0, 123, 255, 0.25);
-    overflow: hidden;
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-    animation: fadeSlideIn 1s ease forwards;
-    animation-delay: 0.3s;
-    transform: scale(1);
-  }
-
-  .course-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 25px 50px rgba(0, 123, 255, 0.35);
-  }
-
-  .course-link {
-    text-decoration: none;
-    color: inherit;
-    display: block;
-  }
-
-  .course-card img {
-    width: 100%;
-    height: auto;
-    max-height: 400px;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-    filter: blur(0px);
-  }
-
-  .course-card:hover img {
-    transform: scale(1.05);
-    filter: blur(2px);
-  }
-
-  .course-title {
-    font-size: 26px;
-    color: #fff;
-    font-weight: 700;
-    padding: 25px 20px;
-    margin: 0;
-    background: linear-gradient(90deg, #007bff, #00c6ff);
-    border-top: 1px solid #eaeaea;
-    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, color 0.3s ease;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  }
-
-  .course-card:hover .course-title {
-    transform: translateY(-3px);
-    background: linear-gradient(90deg, #0056b3, #00aaff);
-  }
-
-  /* Animated Button */
-  .animated-button {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeSlideIn 1s ease forwards;
-    animation-delay: 0.6s;
-  }
-
-  /* Fade & Slide Animation */
-  @keyframes fadeSlideIn {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-</style>
-
+<body class="home">
+  <a class="skip" href="#units">تخطَّ إلى وحدات الدورة</a>
+  <header class="bar bar-home">
+    <a class="brand" href="course.html"><span class="logo">SIOSS</span><span class="brand-text">المنظمة السويدية الدولية للعلوم الرياضية</span></a>
+    <span class="spacer"></span>
+    <a class="bar-link" href="#howto">كيف أستخدم الموقع؟</a>
+    <a class="bar-link" href="#units">الوحدات</a>
+  </header>
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-text">
+        <p class="org">المنظمة السويدية الدولية للعلوم الرياضية · سيوس</p>
+        <h1>دبلوم إعداد معلمي ومعلمات التربية البدنية</h1>
+        <p class="lead">محتوى الدبلوم في ثلاثة مجالات: الحركة، الحياة في الهواء الطلق، والصحة وأسلوب الحياة — نصوص وصور ومقاطع فيديو تعليمية، مع تمارين وتقييم ذاتي وملخص في نهاية كل وحدة.</p>
+        <div class="hero-cta">
+          <a class="btn-main" id="startBtn" href="01.html">ابدأ الدورة من أولها</a>
+          <a class="btn-ghost" href="#units">تصفّح الوحدات</a>
+        </div>
+        <ul class="stats">
+          <li><b>21</b>وحدة</li>
+          <li><b>276</b>صفحة</li>
+          <li><b>200</b>مقطع فيديو</li>
+        </ul>
+      </div>
+      <img class="hero-img" src="assets/img/main-course.png" alt="معلمة تربية بدنية تشرح لطلابها في الصالة الرياضية" width="960" height="640">
+    </div>
+  </section>
+  <main class="wrap">
+    <div class="resume" id="resume" hidden>
+      <div class="resume-text"><small>توقفت آخر مرة عند</small><strong></strong></div>
+      <a href="01.html">متابعة من هنا</a>
+    </div>
+    <section class="howto" id="howto" aria-labelledby="howto-h">
+      <h2 id="howto-h">كيف تتنقل في الدورة؟</h2>
+      <ol class="howto-steps">
+        <li><b>اختر وحدة</b><span>افتح أي وحدة من القائمة أدناه لترى صفحاتها، ثم اضغط على الصفحة التي تريدها.</span></li>
+        <li><b>تنقّل بين الصفحات</b><span>في أسفل كل صفحة زرّان: «الصفحة التالية» و«الصفحة السابقة». وزرّ «الفهرس» في الأعلى يعرض كل الوحدات.</span></li>
+        <li><b>عُد متى شئت</b><span>الصفحات التي زرتها تظهر بعلامة ✓، وزرّ «تابع التعلّم» يعيدك إلى آخر صفحة وصلت إليها.</span></li>
+      </ol>
+      <p class="legend"><span>دليل العلامات:</span><span class="tag tag-video"><span class="play" aria-hidden="true"></span>فيديو</span> صفحة فيها مقاطع فيديو<span class="tag tag-ex">تمرين</span><span class="tag tag-self">تقييم ذاتي</span><span class="tag tag-sum">ملخص</span><span class="tag tag-pdf">ملف PDF</span></p>
+    </section>
+    <section class="tools" id="units" aria-label="وحدات الدورة">
+      <h2>وحدات الدورة</h2>
+      <div class="search-box">
+        <input class="search" id="q" type="search" placeholder="ابحث في كل الدروس: كلمة أو موضوع…" aria-label="ابحث في دروس الدورة" autocomplete="off">
+      </div>
+      <div class="filters" role="group" aria-label="تصفية الصفحات">
+        <button type="button" class="filter on" data-filter="">كل الصفحات</button>
+        <button type="button" class="filter" data-filter="video"><span class="play" aria-hidden="true"></span>فيها فيديو</button>
+        <button type="button" class="filter" data-filter="ex">تمارين وتقييم ذاتي</button>
+        <button type="button" class="filter" data-filter="sum">ملخصات</button>
+      </div>
+      <p class="hint" id="hint" aria-live="polite"></p>
+    </section>
+    <ol class="results" id="results" hidden></ol>
+    <div id="unitList">
+    <section class="part">
+      <h3>تمهيد</h3>
+      <div class="units">
+        <details class="unit" id="u1">
+          <summary><span class="num">01</span><span class="ut">قبل أن تبدأ</span><span class="um">صفحتان</span><span class="chev" aria-hidden="true"></span><span class="ubar"><i></i></span></summary>
+          <ol class="pages">
+            <li data-types=""><a href="01.html"><span class="pn">1</span><span class="pt">قبل أن تبدأ</span></a></li>
+            <li data-types=""><a href="02.html"><span class="pn">2</span><span class="pt">مقدمة</span></a></li>
+          </ol>
+        </details>
+      </div>
+    </section>
+    <section class="part">
+      <h3>المجال الأول · الحركة</h3>
+      <div class="units">
+        <details class="unit" id="u2">
+          <summary><span class="num">02</span><span class="ut">الحركات المعقدة</span><span class="um">4 صفحات</span><span class="chev" aria-hidden="true"></span><span class="ubar"><i></i></span></summary>
+          <ol class="pages">
+            <li data-types=""><a href="03.html"><span class="pn">1</span><span class="pt">مقدمة</span></a></li>
+            <li data-types=""><a href="04.html"><span class="pn">2</span><span class="pt">الخلفية</span></a></li>
+            <li data-types=""><a href="05.html"><span class="pn">3</span><span class="pt">الألعاب، الألعاب المنظمة، والرياضات</span></a></li>
+            <li data-types=""><a href="06.html"><span class="pn">4</span><span class="pt">الحركات المعقدة</span></a></li>
+          </ol>
+        </details>
+        <details class="unit" id="u3">
+          <summary><span class="num">03</span><span class="ut">الجمباز والأجهزة</span><span class="um">15 صفحة · 47 فيديو</span><span class="chev" aria-hidden="true"></span><span class="ubar"><i></i></span></summary>
+          <ol class="pages">
+            <li data-types="video"><a href="07.html"><span class="pn">1</span><span class="pt">سجادة: شقلبة أمامية</span><span class="tag tag-video"><span class="play" aria-hidden="true"></span>4 فيديوهات</span></a></li>
+            <li data-types="video"><a href="08.html"><span class="pn">2</span><span class="pt">سجادة: الوقوف على اليدين – بناء سقف</span><span class="tag tag-video"><span class="play" aria-hidden="true"></span>5 فيديوهات</span></a></li>
+            <li data-types="video"><a href="09.html"><span class="pn">3</span><span class="pt">سجادة: عجلة</span><span class="tag tag-video"><span class="play" aria-hidden="true"></span>3 فيديوهات</span></a></li>
+            <li data-types="video"><a href="10.html"><span class="pn">4</span><span class="pt">سجادة: دوران أمامي من سطح مائل</span><span class="tag tag-video"><span class="play" aria-hidden="true"></span>3 فيديوهات</span></a></li>
+            <li data-types="video"><a href="11.html"><span class="pn">5</span><span class="pt">الحلقات: شقلبة خلفية وشقلبة أمامية</span><span class="tag tag-video"><span class="play" aria-hidden="true"></span>3 فيديوهات</span></a></li>
+            <li data-types="video"><a href="12.html"><span class="pn">6</span><span class="pt">الحلقات: التعلّق المتدلّي أو التعلّق من الوضع المنخفض</span><span class="tag tag-video"><span class="play" aria-hidden="true"></span>4 فيديوهات</span></a></li>
+            <li data-types="video"><a href="13.html"><span class="pn">7</span><span class="pt">الحلقات: الاستناد باليدين</span><span class="tag tag-video"><span class="play" aria-hidden="true"></span>3 فيديوهات</span></a></li>
+            <li data-types="video"><a href="14.html"><span class="pn">8</span><span class="pt">الحلقات: الدُوَّامة</span><span class="tag tag-video"><span class="play" aria-hidden="true"></span>فيديوهان</span></a></li>
+            <li data-types="video"><a href="15.html"><span class="pn">9</span><span class="pt">البار الأفقي: امسك القبضة بشكل صحيح</span><span class="tag tag-video"><span class="play" aria-hidden="true"></span>فيديوهان</span></a></li>
+            <li data-types="video"><a href="16.html"><span class="pn">10</span><span class="pt">البار الأفقي: الرمي العلوي</span><span class="tag tag-video"><span class="play" aria-hidden="true"></span>3 فيديوهات</span></a></li>
+            <li data-types="video"><a href="17.html"><span class="pn">11</span><span class="pt">لوح القفز: القفز الابتدائي أو القفزة التمهيدية</span><span class="tag tag-video"><span class="play" aria-hidden="true"></span>فيديوهان</span></a></li>
+            <li data-types="video"><a href="18.html"><span class="pn">12</span><span class="pt">لوح القفز: قفزة متوسطة مع هبوط وسيط</span><span class="tag tag-video"><span class="play" aria-hidden="true"></span>3 فيديوهات</span></a></li>
+            <li data-types="video"><a href="19.html"><span class="pn">13</span><span class="pt">الترامبولين: القفز الداخلي</span><span class="tag tag-video"><span class="play" aria-hidden="true"></span>3 فيديوهات</span></a></li>
+            <li data-types="video"><a href="20.html"><span class="pn">14</span><span class="pt">الترامبولين: دوران – ١٨٠ درجة</span><span class="tag tag-video"><span class="play" aria-hidden="true"></span>4 فيديوهات</span></a></li>
+            <li data-types="video"><a href="21.html"><span class="pn">15</span><span class="pt">الترامبولين: دورة أمامية باليدين على الحصيرة</span><span class="tag tag-video"><span class="play" aria-hidden="true"></span>3 فيديوهات</span></a></li>
+          </ol>
+        </details>
+        <details class="unit" id="u4">
+          <summary><span class="num">04</span><span class="ut">الباركور</span><span class="um">19 صفحة</span><span class="chev" aria-hidden="true"></span><span class="ubar"><i></i></span></summary>
+          <ol class="pages">
+            <li data-types=""><a href="22.html"><span class="pn">1</span><span class="pt">مقدمة</span></a></li>
+            <li data-types=""><a href="23.html"><span class="pn">2</span><span class="pt">تدريب الباركور</span></a></li>
+            <li data-types=""><a href="24.html"><span class="pn">3</span><span class="pt">مقدمة</span></a></li>
+            <li data-types=""><a href="25.html"><span class="pn">4</span><span class="pt">قفزة دقيقة</span></a></li>
+            <li data-types=""><a href="26.html"><span class="pn">5</span><span class="pt">خطوة إلى الأمام – القفزة السريعة</span></a></li>
+            <li data-types=""><a href="27.html"><span class="pn">6</span><span class="pt">القفزة العكسية</span></a></li>
+            <li data-types=""><a href="28.html"><span class="pn">7</span><span class="pt">قفزة الداش</span></a></li>
+            <li data-types=""><a href="29.html"><span class="pn">8</span><span class="pt">قفزة الكونغ</span></a></li>
+            <li data-types=""><a href="30.html"><span class="pn">9</span><span class="pt">غسالة الأطباق</span></a></li>
+            <li data-types=""><a href="31.html"><span class="pn">10</span><span class="pt">قفزة الكسول</span></a></li>
+            <li data-types=""><a href="32.html"><span class="pn">11</span><span class="pt">قفزة الدوران</span></a></li>
+            <li data-types=""><a href="33.html"><span class="pn">12</span><span class="pt">العبور تحت العارضة</span></a></li>
+            <li data-types=""><a href="34.html"><span class="pn">13</span><span class="pt">جري الجدار</span></a></li>
+            <li data-types=""><a href="35.html"><span class="pn">14</span><span class="pt">مسار الباركور في صالة الألعاب الرياضية</span></a></li>
+            <li data-types=""><a href="36.html"><span class="pn">15</span><span class="pt">الارتجال في ساحة المدرسة</span></a></li>
+            <li data-types=""><a href="37.html"><span class="pn">16</span><span class="pt">تكييف الحركات: للنشاط</span></a></li>
+            <li data-types=""><a href="38.html"><span class="pn">17</span><span class="pt">تكييف الحركات: للسياق</span></a></li>
+            <li data-types="ex"><a href="40.html"><span class="pn">18</span><span class="pt">التقييم الذاتي</span><span class="tag tag-self">تقييم ذاتي</span></a></li>
+            <li data-types="sum"><a href="41.html"><span class="pn">19</span><span class="pt">الملخص</span><span class="tag tag-sum">ملخص</span></a></li>
+          </ol>
+        </details>
+        <details class="unit" id="u5">
+          <summary><span class="num">05</span><span class="ut">الرقص والحركة على الموسيقى</span><span class="um">21 صفحة · 41 فيديو</span><span class="chev" aria-hidden="true"></span><span class="ubar"><i></i></span></summary>
+          <ol class="pages">
+            <li data-types=""><a href="42.html"><span class="pn">1</span><span class="pt">مقدمة</span></a></li>
+            <li data-types=""><a href="43.html"><span class="pn">2</span><span class="pt">خلفية</span></a></li>
+            <li data-types=""><a href="44.html"><span class="pn">3</span><span class="pt">التاريخ</span></a></li>
+            <li data-types=""><a href="45.html"><span class="pn">4</span><span class="pt">مقدمة</span></a></li>
+            <li data-types=""><a href="46.html"><span class="pn">5</span><span class="pt">فالس</span></a></li>
+            <li data-types=""><a href="47.html"><span class="pn">6</span><span class="pt">بَغّ (Bugg)</span></a></li>
+            <li data-types=""><a href="48.html"><span class="pn">7</span><span class="pt">فوكستروت</span></a></li>
+            <li data-types=""><a href="49.html"><span class="pn">8</span><span class="pt">رقص الشوارع</span></a></li>
+            <li data-types=""><a href="51.html"><span class="pn">9</span><span class="pt">مقدمة</span></a></li>
+            <li data-types=""><a href="52.html"><span class="pn">10</span><span class="pt">مفاهيم في الرقص والحركة على أنغام الموسيقى</span></a></li>
+            <li data-types=""><a href="53.html"><span class="pn">11</span><span class="pt">نصف الشوط والشوط المزدوج</span></a></li>
+            <li data-types=""><a href="54.html"><span class="pn">12</span><span class="pt">تحليل الموسيقى (1)</span></a></li>
+            <li data-types=""><a href="55.html"><span class="pn">13</span><span class="pt">تحليل الموسيقى: قم بتحليل الموسيقى الخاصة بك بهذه الطريقة</span></a></li>
+            <li data-types=""><a href="57.html"><span class="pn">14</span><span class="pt">اختيار الموسيقى</span></a></li>
+            <li data-types="video"><a href="58.html"><span class="pn">15</span><span class="pt">بنك التمارين (1)</span><span class="tag tag-video"><span class="play" aria-hidden="true"></span>فيديو</span></a></li>
+            <li data-types="video"><a href="59.html"><span class="pn">16</span><span class="pt">بنك التمارين (2)</span><span class="tag tag-video"><span class="play" aria-hidden="true"></span>8 فيديوهات</span></a></li>
+            <li data-types="video"><a href="60.html"><span class="pn">17</span><span class="pt">بنك التمارين (3)</span><span class="tag tag-video"><span class="play" aria-hidden="true"></span>8 فيديوهات</span></a></li>
+            <li data-types="video"><a href="61.html"><span class="pn">18</span><span class="pt">بنك التمارين (4)</span><span class="tag tag-video"><span class="play" aria-hidden="true"></span>8 فيديوهات</span></a></li>
+            <li data-types="video"><a href="62.html"><span class="pn">19</span><span class="pt">بنك التمارين (5)</span><span class="tag tag-video"><span class="play" aria-hidden="true"></span>8 فيديوهات</span></a></li>
+            <li data-types="video"><a href="63.html"><span class="pn">20</span><span class="pt">بنك التمارين (6)</span><span class="tag tag-video"><span class="play" aria-hidden="true"></span>8 فيديوهات</span></a></li>
+            <li data-types="sum"><a href="66.html"><span class="pn">21</span><span class="pt">ملخص</span><span class="tag tag-sum">ملخص</span></a></li>
+          </ol>
+        </details>
+        <details class="unit" id="u6">
+          <summary><span class="num">06</span><span class="ut">اللياقة البدنية</span><span class="um">9 صفحات</span><span class="chev" aria-hidden="true"></span><span class="ubar"><i></i></span></summary>
+          <ol class="pages">
+            <li data-types=""><a href="67.html"><span class="pn">1</span><span class="pt">اللياقة البدنية</span></a></li>
+            <li data-types=""><a href="68.html"><span class="pn">2</span><span class="pt">مقدمة</span></a></li>
+            <li data-types=""><a href="69.html"><span class="pn">3</span><span class="pt">لياقة بدنية</span></a></li>
+            <li data-types=""><a href="70.html"><span class="pn">4</span><span class="pt">ممارسة اللياقة البدنية</span></a></li>
+            <li data-types=""><a href="71.html"><span class="pn">5</span><span class="pt">الآثار الإيجابية</span></a></li>
+            <li data-types=""><a href="72.html"><span class="pn">6</span><span class="pt">خطة التدريب</span></a></li>
+            <li data-types=""><a href="73.html"><span class="pn">7</span><span class="pt">اختبارات اللياقة البدنية</span></a></li>
+            <li data-types="ex"><a href="74.html"><span class="pn">8</span><span class="pt">تمرين</span><span class="tag tag-ex">تمرين</span></a></li>
+            <li data-types="ex"><a href="75.html"><span class="pn">9</span><span class="pt">التقييم الذاتي</span><span class="tag tag-self">تقييم ذاتي</span></a></li>
+          </ol>
+        </details>
+        <details class="unit" id="u7">
+          <summary><span class="num">07</span><span class="ut">التوافق العصبي العضلي</span><span class="um">3 صفحات · 5 فيديوهات</span><span class="chev" aria-hidden="true"></span><span class="ubar"><i></i></span></summary>
+          <ol class="pages">
+            <li data-types=""><a href="76.html"><span class="pn">1</span><span class="pt">التوافق العصبي العضلي</span></a></li>
+            <li data-types=""><a href="77.html"><span class="pn">2</span><span class="pt">تنسيق الممارسة</span></a></li>
+            <li data-types="video"><a href="78.html"><span class="pn">3</span><span class="pt">تمارين عملية</span><span class="tag tag-video"><span class="play" aria-hidden="true"></span>5 فيديوهات</span></a></li>
+          </ol>
+        </details>
+        <details class="unit" id="u8">
+          <summary><span class="num">08</span><span class="ut">تدريب القوة</span><span class="um">20 صفحة · 66 فيديو</span><span class="chev" aria-hidden="true"></span><span class="ubar"><i></i></span></summary>
+          <ol class="pages">
+            <li data-types=""><a href="79.html"><span class="pn">1</span><span class="pt">تدريب القوة</span></a></li>
+            <li data-types=""><a href="80.html"><span class="pn">2</span><span class="pt">التدريب مع المعدات وبدونها</span></a></li>
+            <li data-types=""><a href="81.html"><span class="pn">3</span><span class="pt">خطة التدريب</span></a></li>
+            <li data-types=""><a href="82.html"><span class="pn">4</span><span class="pt">الآثار الإيجابية</span></a></li>
+            <li data-types="video"><a href="83.html"><span class="pn">5</span><span class="pt">الجسد كمقاومة (1)</span><span class="tag tag-video"><span class="play" aria-hidden="true"></span>5 فيديوهات</span></a></li>
+            <li data-types="video"><a href="84.html"><span class="pn">6</span><span class="pt">الجسد كمقاومة (2)</span><span class="tag tag-video"><span class="play" aria-hidden="true"></span>6 فيديوهات</span></a></li>
+            <li data-types="video"><a href="85.html"><span class="pn">7</span><span class="pt">الجسد كمقاومة (3)</span><span class="tag tag-video"><span class="play" aria-hidden="true"></span>5 فيديوهات</span></a></li>
+            <li data-types="video"><a href="86.html"><span class="pn">8</span><span class="pt">الجسد كمقاومة (4)</span><span class="tag tag-video"><span class="play" aria-hidden="true"></span>6 فيديوهات</span></a></li>
+            <li data-types="video"><a href="87.html"><span class="pn">9</span><span class="pt">الجسد كمقاومة (5)</span><span class="tag tag-video"><span class="play" aria-hidden="true"></span>6 فيديوهات</span></a></li>
+            <li data-types="video"><a href="88.html"><span class="pn">10</span><span class="pt">الجسد كمقاومة (6)</span><span class="tag tag-video"><span class="play" aria-hidden="true"></span>6 فيديوهات</span></a></li>
+            <li data-types="video"><a href="89.html"><span class="pn">11</span><span class="pt">الجسد كمقاومة (7)</span><span class="tag tag-video"><span class="play" aria-hidden="true"></span>4 فيديوهات</span></a></li>
+            <li data-types="video"><a href="90.html"><span class="pn">12</span><span class="pt">الآلات (1)</span><span class="tag tag-video"><span class="play" aria-hidden="true"></span>6 فيديوهات</span></a></li>
+            <li data-types="video"><a href="91.html"><span class="pn">13</span><span class="pt">الآلات (2)</span><span class="tag tag-video"><span class="play" aria-hidden="true"></span>5 فيديوهات</span></a></li>
+            <li data-types="video"><a href="92.html"><span class="pn">14</span><span class="pt">الآلات (3)</span><span class="tag tag-video"><span class="play" aria-hidden="true"></span>6 فيديوهات</span></a></li>
+            <li data-types="video"><a href="93.html"><span class="pn">15</span><span class="pt">الأوزان الحرة (1)</span><span class="tag tag-video"><span class="play" aria-hidden="true"></span>5 فيديوهات</span></a></li>
+            <li data-types="video"><a href="94.html"><span class="pn">16</span><span class="pt">الأوزان الحرة (2)</span><span class="tag tag-video"><span class="play" aria-hidden="true"></span>6 فيديوهات</span></a></li>
+            <li data-types=""><a href="95.html"><span class="pn">17</span><span class="pt">اختبارات القوة</span></a></li>
+            <li data-types=""><a href="96.html"><span class="pn">18</span><span class="pt">معلومة</span></a></li>
+            <li data-types="ex"><a href="97.html"><span class="pn">19</span><span class="pt">تمرين</span><span class="tag tag-ex">تمرين</span></a></li>
+            <li data-types="ex"><a href="98.html"><span class="pn">20</span><span class="pt">التقييم الذاتي</span><span class="tag tag-self">تقييم ذاتي</span></a></li>
+          </ol>
+        </details>
+        <details class="unit" id="u9">
+          <summary><span class="num">09</span><span class="ut">المرونة</span><span class="um">10 صفحات · 27 فيديو</span><span class="chev" aria-hidden="true"></span><span class="ubar"><i></i></span></summary>
+          <ol class="pages">
+            <li data-types=""><a href="99.html"><span class="pn">1</span><span class="pt">المرونة</span></a></li>
+            <li data-types=""><a href="100.html"><span class="pn">2</span><span class="pt">تمارين الاطالة</span></a></li>
+            <li data-types="video"><a href="101.html"><span class="pn">3</span><span class="pt">تمارين عملية (1)</span><span class="tag tag-video"><span class="play" aria-hidden="true"></span>7 فيديوهات</span></a></li>
+            <li data-types="video"><a href="102.html"><span class="pn">4</span><span class="pt">تمارين عملية (2)</span><span class="tag tag-video"><span class="play" aria-hidden="true"></span>9 فيديوهات</span></a></li>
+            <li data-types="video"><a href="103.html"><span class="pn">5</span><span class="pt">تمارين عملية (3)</span><span class="tag tag-video"><span class="play" aria-hidden="true"></span>7 فيديوهات</span></a></li>
+            <li data-types="video"><a href="104.html"><span class="pn">6</span><span class="pt">تمارين عملية (4)</span><span class="tag tag-video"><span class="play" aria-hidden="true"></span>4 فيديوهات</span></a></li>
+            <li data-types="ex"><a href="105.html"><span class="pn">7</span><span class="pt">تمرين</span><span class="tag tag-ex">تمرين</span></a></li>
+            <li data-types="ex"><a href="106.html"><span class="pn">8</span><span class="pt">التقييم الذاتي</span><span class="tag tag-self">تقييم ذاتي</span></a></li>
+            <li data-types="ex"><a href="107.html"><span class="pn">9</span><span class="pt">التقييم الذاتي الشامل</span><span class="tag tag-self">تقييم ذاتي</span></a></li>
+            <li data-types="sum"><a href="108.html"><span class="pn">10</span><span class="pt">الملخص العام</span><span class="tag tag-sum">ملخص</span></a></li>
+          </ol>
+        </details>
+        <details class="unit" id="u10">
+          <summary><span class="num">10</span><span class="ut">السباحة</span><span class="um">15 صفحة · 14 فيديو</span><span class="chev" aria-hidden="true"></span><span class="ubar"><i></i></span></summary>
+          <ol class="pages">
+            <li data-types=""><a href="109.html"><span class="pn">1</span><span class="pt">مقدمة: الأهداف</span></a></li>
+            <li data-types=""><a href="110.html"><span class="pn">2</span><span class="pt">مقدمة: نشاط</span></a></li>
+            <li data-types=""><a href="111.html"><span class="pn">3</span><span class="pt">خلفية</span></a></li>
+            <li data-types="video"><a href="112.html"><span class="pn">4</span><span class="pt">الطفو على سطح الماء</span><span class="tag tag-video"><span class="play" aria-hidden="true"></span>فيديو</span></a></li>
+            <li data-types="video"><a href="113.html"><span class="pn">5</span><span class="pt">مقدمة</span><span class="tag tag-video"><span class="play" aria-hidden="true"></span>فيديو</span></a></li>
+            <li data-types="video"><a href="114.html"><span class="pn">6</span><span class="pt">سباحة الصدر</span><span class="tag tag-video"><span class="play" aria-hidden="true"></span>3 فيديوهات</span></a></li>
+            <li data-types="video"><a href="115.html"><span class="pn">7</span><span class="pt">سباحة الظهر</span><span class="tag tag-video"><span class="play" aria-hidden="true"></span>3 فيديوهات</span></a></li>
+            <li data-types="video"><a href="116.html"><span class="pn">8</span><span class="pt">الزحف</span><span class="tag tag-video"><span class="play" aria-hidden="true"></span>فيديوهان</span></a></li>
+            <li data-types="video"><a href="117.html"><span class="pn">9</span><span class="pt">الفراشة</span><span class="tag tag-video"><span class="play" aria-hidden="true"></span>فيديو</span></a></li>
+            <li data-types="video"><a href="118.html"><span class="pn">10</span><span class="pt">الغوص (1)</span><span class="tag tag-video"><span class="play" aria-hidden="true"></span>فيديوهان</span></a></li>
+            <li data-types=""><a href="119.html"><span class="pn">11</span><span class="pt">الغوص: معادلة الضغط</span></a></li>
+            <li data-types="video"><a href="120.html"><span class="pn">12</span><span class="pt">السباحة بالملابس والمشي في الماء</span><span class="tag tag-video"><span class="play" aria-hidden="true"></span>فيديو</span></a></li>
+            <li data-types=""><a href="121.html"><span class="pn">13</span><span class="pt">السباحة كشكل من أشكال التمارين الرياضية</span></a></li>
+            <li data-types="ex"><a href="123.html"><span class="pn">14</span><span class="pt">التقييم الذاتي</span><span class="tag tag-self">تقييم ذاتي</span></a></li>
+            <li data-types="sum"><a href="124.html"><span class="pn">15</span><span class="pt">ملخص</span><span class="tag tag-sum">ملخص</span></a></li>
+          </ol>
+        </details>
+      </div>
+    </section>
+    <section class="part">
+      <h3>المجال الثاني · الحياة في الهواء الطلق</h3>
+      <div class="units">
+        <details class="unit" id="u11">
+          <summary><span class="num">11</span><span class="ut">التوجيه واستخدام الخريطة</span><span class="um">20 صفحة</span><span class="chev" aria-hidden="true"></span><span class="ubar"><i></i></span></summary>
+          <ol class="pages">
+            <li data-types=""><a href="125.html"><span class="pn">1</span><span class="pt">النشاطات في الهواء الطلق</span></a></li>
+            <li data-types=""><a href="126.html"><span class="pn">2</span><span class="pt">مقدمة: الأهداف</span></a></li>
+            <li data-types=""><a href="127.html"><span class="pn">3</span><span class="pt">مقدمة: نشاط</span></a></li>
+            <li data-types=""><a href="128.html"><span class="pn">4</span><span class="pt">خلفية</span></a></li>
+            <li data-types=""><a href="129.html"><span class="pn">5</span><span class="pt">مقدمة</span></a></li>
+            <li data-types=""><a href="130.html"><span class="pn">6</span><span class="pt">خريطة التوجيه</span></a></li>
+            <li data-types=""><a href="131.html"><span class="pn">7</span><span class="pt">علامة الخريطة</span></a></li>
+            <li data-types=""><a href="132.html"><span class="pn">8</span><span class="pt">تناسب الخريطة</span></a></li>
+            <li data-types=""><a href="133.html"><span class="pn">9</span><span class="pt">الخطوط الإرشادية</span></a></li>
+            <li data-types=""><a href="136.html"><span class="pn">10</span><span class="pt">فروق الارتفاع</span></a></li>
+            <li data-types=""><a href="137.html"><span class="pn">11</span><span class="pt">اعتراضات آمنة</span></a></li>
+            <li data-types=""><a href="138.html"><span class="pn">12</span><span class="pt">اختيار المسار</span></a></li>
+            <li data-types=""><a href="139.html"><span class="pn">13</span><span class="pt">البوصلة</span></a></li>
+            <li data-types=""><a href="140.html"><span class="pn">14</span><span class="pt">اتجاه المدينة</span></a></li>
+            <li data-types=""><a href="141.html"><span class="pn">15</span><span class="pt">تحديد الاتجاهات باستخدام نظام تحديد المواقع العالمي (GPS)</span></a></li>
+            <li data-types=""><a href="142.html"><span class="pn">16</span><span class="pt">التوجيه كشكل من أشكال المنافسة</span></a></li>
+            <li data-types="ex"><a href="144.html"><span class="pn">17</span><span class="pt">التقييم الذاتي (1)</span><span class="tag tag-self">تقييم ذاتي</span></a></li>
+            <li data-types="ex"><a href="145.html"><span class="pn">18</span><span class="pt">التقييم الذاتي (2)</span><span class="tag tag-self">تقييم ذاتي</span></a></li>
+            <li data-types="ex"><a href="146.html"><span class="pn">19</span><span class="pt">التقييم الذاتي (3)</span><span class="tag tag-self">تقييم ذاتي</span></a></li>
+            <li data-types="sum"><a href="147.html"><span class="pn">20</span><span class="pt">ملخص</span><span class="tag tag-sum">ملخص</span></a></li>
+          </ol>
+        </details>
+        <details class="unit" id="u12">
+          <summary><span class="num">12</span><span class="ut">الأنشطة الخارجية والتخييم</span><span class="um">17 صفحة</span><span class="chev" aria-hidden="true"></span><span class="ubar"><i></i></span></summary>
+          <ol class="pages">
+            <li data-types=""><a href="148.html"><span class="pn">1</span><span class="pt">مقدمة: الأهداف</span></a></li>
+            <li data-types=""><a href="149.html"><span class="pn">2</span><span class="pt">مقدمة: نشاط</span></a></li>
+            <li data-types=""><a href="150.html"><span class="pn">3</span><span class="pt">خلفية</span></a></li>
+            <li data-types=""><a href="151.html"><span class="pn">4</span><span class="pt">مقدمة</span></a></li>
+            <li data-types=""><a href="152.html"><span class="pn">5</span><span class="pt">الحق العام</span></a></li>
+            <li data-types=""><a href="153.html"><span class="pn">6</span><span class="pt">ارتداء الملابس بشكل وظيفي</span></a></li>
+            <li data-types=""><a href="154.html"><span class="pn">7</span><span class="pt">الاستعداد الصحيح للتخييم</span></a></li>
+            <li data-types=""><a href="155.html"><span class="pn">8</span><span class="pt">للتعبئة بكفاءة</span></a></li>
+            <li data-types=""><a href="157.html"><span class="pn">9</span><span class="pt">إشعال النار في الطبيعة</span></a></li>
+            <li data-types=""><a href="158.html"><span class="pn">10</span><span class="pt">الطبخ في الهواء الطلق (1)</span></a></li>
+            <li data-types=""><a href="159.html"><span class="pn">11</span><span class="pt">الطبخ في الهواء الطلق (2)</span></a></li>
+            <li data-types=""><a href="160.html"><span class="pn">12</span><span class="pt">قضاء الليل في الطبيعة: مخيم</span></a></li>
+            <li data-types=""><a href="161.html"><span class="pn">13</span><span class="pt">قضاء الليل في الطبيعة: حصيرة النوم وكيس النوم</span></a></li>
+            <li data-types=""><a href="162.html"><span class="pn">14</span><span class="pt">قضاء الليل في الطبيعة (3)</span></a></li>
+            <li data-types=""><a href="163.html"><span class="pn">15</span><span class="pt">قضاء الليل في الطبيعة (4)</span></a></li>
+            <li data-types=""><a href="164.html"><span class="pn">16</span><span class="pt">قضاء الليل في الطبيعة (5)</span></a></li>
+            <li data-types="sum"><a href="165.html"><span class="pn">17</span><span class="pt">ملخص</span><span class="tag tag-sum">ملخص</span></a></li>
+          </ol>
+        </details>
+        <details class="unit" id="u13">
+          <summary><span class="num">13</span><span class="ut">السلامة في الماء وعلى الجليد</span><span class="um">19 صفحة</span><span class="chev" aria-hidden="true"></span><span class="ubar"><i></i></span></summary>
+          <ol class="pages">
+            <li data-types=""><a href="166.html"><span class="pn">1</span><span class="pt">مقدمة: الأهداف</span></a></li>
+            <li data-types=""><a href="167.html"><span class="pn">2</span><span class="pt">مقدمة: نشاط</span></a></li>
+            <li data-types=""><a href="168.html"><span class="pn">3</span><span class="pt">خلفية</span></a></li>
+            <li data-types=""><a href="169.html"><span class="pn">4</span><span class="pt">السباحة في الأماكن المفتوحة: أشياء يجب مراعاتها عند الاستحمام</span></a></li>
+            <li data-types=""><a href="170.html"><span class="pn">5</span><span class="pt">السباحة في الأماكن المفتوحة (2)</span></a></li>
+            <li data-types=""><a href="171.html"><span class="pn">6</span><span class="pt">عادة الاستحمام</span></a></li>
+            <li data-types=""><a href="173.html"><span class="pn">7</span><span class="pt">ارق الجليد: الأشياء التي يجب مراعاتها عند وجودك على الجليد</span></a></li>
+            <li data-types=""><a href="174.html"><span class="pn">8</span><span class="pt">ارق الجليد (2)</span></a></li>
+            <li data-types="ex"><a href="175.html"><span class="pn">9</span><span class="pt">4-التمرين 3</span><span class="tag tag-ex">تمرين</span></a></li>
+            <li data-types=""><a href="176.html"><span class="pn">10</span><span class="pt">مقدمة</span></a></li>
+            <li data-types=""><a href="177.html"><span class="pn">11</span><span class="pt">اتصل على</span></a></li>
+            <li data-types=""><a href="178.html"><span class="pn">12</span><span class="pt">إجراءات إنقاذ شخص يغرق</span></a></li>
+            <li data-types=""><a href="180.html"><span class="pn">13</span><span class="pt">في الماء: مع طوق النجاة أو أي مساعدة أخرى</span></a></li>
+            <li data-types=""><a href="181.html"><span class="pn">14</span><span class="pt">في الماء: بدون مساعدات</span></a></li>
+            <li data-types=""><a href="183.html"><span class="pn">15</span><span class="pt">على الجليد: إنقاذ حياة على الجليد</span></a></li>
+            <li data-types=""><a href="184.html"><span class="pn">16</span><span class="pt">على الجليد: ماذا تفعل إذا مشيت عبر الجليد</span></a></li>
+            <li data-types="ex"><a href="185.html"><span class="pn">17</span><span class="pt">7 التمرين</span><span class="tag tag-ex">تمرين</span></a></li>
+            <li data-types="ex"><a href="186.html"><span class="pn">18</span><span class="pt">التقييم الذاتي</span><span class="tag tag-self">تقييم ذاتي</span></a></li>
+            <li data-types="sum"><a href="187.html"><span class="pn">19</span><span class="pt">ملخص</span><span class="tag tag-sum">ملخص</span></a></li>
+          </ol>
+        </details>
+      </div>
+    </section>
+    <section class="part">
+      <h3>المجال الثالث · الصحة وأسلوب الحياة</h3>
+      <div class="units">
+        <details class="unit" id="u14">
+          <summary><span class="num">14</span><span class="ut">تخطيط التدريب والصحة</span><span class="um">12 صفحة</span><span class="chev" aria-hidden="true"></span><span class="ubar"><i></i></span></summary>
+          <ol class="pages">
+            <li data-types=""><a href="188.html"><span class="pn">1</span><span class="pt">مقدمة (1)</span></a></li>
+            <li data-types=""><a href="189.html"><span class="pn">2</span><span class="pt">مقدمة (2)</span></a></li>
+            <li data-types=""><a href="190.html"><span class="pn">3</span><span class="pt">مقدمة: نشاط</span></a></li>
+            <li data-types=""><a href="191.html"><span class="pn">4</span><span class="pt">خلفية</span></a></li>
+            <li data-types=""><a href="192.html"><span class="pn">5</span><span class="pt">التخطيط للتدريب</span></a></li>
+            <li data-types=""><a href="193.html"><span class="pn">6</span><span class="pt">اختبارات التدريب</span></a></li>
+            <li data-types=""><a href="194.html"><span class="pn">7</span><span class="pt">مذكرات التدريب</span></a></li>
+            <li data-types=""><a href="195.html"><span class="pn">8</span><span class="pt">مبادئ التدريب</span></a></li>
+            <li data-types=""><a href="196.html"><span class="pn">9</span><span class="pt">التحقيق في البيئة المحلية</span></a></li>
+            <li data-types=""><a href="197.html"><span class="pn">10</span><span class="pt">محادثة حول التجارب</span></a></li>
+            <li data-types="ex"><a href="199.html"><span class="pn">11</span><span class="pt">التقييم الذاتي</span><span class="tag tag-self">تقييم ذاتي</span></a></li>
+            <li data-types="sum"><a href="200.html"><span class="pn">12</span><span class="pt">ملخص</span><span class="tag tag-sum">ملخص</span></a></li>
+          </ol>
+        </details>
+        <details class="unit" id="u15">
+          <summary><span class="num">15</span><span class="ut">التدريب الذهني وإدارة الإجهاد</span><span class="um">17 صفحة</span><span class="chev" aria-hidden="true"></span><span class="ubar"><i></i></span></summary>
+          <ol class="pages">
+            <li data-types=""><a href="201.html"><span class="pn">1</span><span class="pt">مقدمة: الأهداف</span></a></li>
+            <li data-types=""><a href="202.html"><span class="pn">2</span><span class="pt">مقدمة: نشاط</span></a></li>
+            <li data-types=""><a href="203.html"><span class="pn">3</span><span class="pt">خلفية</span></a></li>
+            <li data-types=""><a href="204.html"><span class="pn">4</span><span class="pt">مقدمة</span></a></li>
+            <li data-types=""><a href="205.html"><span class="pn">5</span><span class="pt">التركيز</span></a></li>
+            <li data-types=""><a href="206.html"><span class="pn">6</span><span class="pt">التحكم في التوتر</span></a></li>
+            <li data-types=""><a href="207.html"><span class="pn">7</span><span class="pt">محادثة داخلية</span></a></li>
+            <li data-types=""><a href="208.html"><span class="pn">8</span><span class="pt">التصور</span></a></li>
+            <li data-types=""><a href="209.html"><span class="pn">9</span><span class="pt">الأهداف الفرعية</span></a></li>
+            <li data-types=""><a href="211.html"><span class="pn">10</span><span class="pt">مقدمة</span></a></li>
+            <li data-types=""><a href="212.html"><span class="pn">11</span><span class="pt">ماذا يحدث في الجسم؟</span></a></li>
+            <li data-types=""><a href="213.html"><span class="pn">12</span><span class="pt">إدارة الإجهاد</span></a></li>
+            <li data-types=""><a href="214.html"><span class="pn">13</span><span class="pt">ممارسة الرياضة اليومية</span></a></li>
+            <li data-types=""><a href="215.html"><span class="pn">14</span><span class="pt">النوم</span></a></li>
+            <li data-types=""><a href="216.html"><span class="pn">15</span><span class="pt">الاسترخاء</span></a></li>
+            <li data-types="ex"><a href="218.html"><span class="pn">16</span><span class="pt">التقييم الذاتي</span><span class="tag tag-self">تقييم ذاتي</span></a></li>
+            <li data-types="sum"><a href="219.html"><span class="pn">17</span><span class="pt">ملخص</span><span class="tag tag-sum">ملخص</span></a></li>
+          </ol>
+        </details>
+        <details class="unit" id="u16">
+          <summary><span class="num">16</span><span class="ut">الإصابات الرياضية</span><span class="um">13 صفحة</span><span class="chev" aria-hidden="true"></span><span class="ubar"><i></i></span></summary>
+          <ol class="pages">
+            <li data-types=""><a href="220.html"><span class="pn">1</span><span class="pt">الاصابات الرياضية</span></a></li>
+            <li data-types=""><a href="221.html"><span class="pn">2</span><span class="pt">مقدمة</span></a></li>
+            <li data-types=""><a href="222.html"><span class="pn">3</span><span class="pt">الإحماء</span></a></li>
+            <li data-types=""><a href="223.html"><span class="pn">4</span><span class="pt">تقنية</span></a></li>
+            <li data-types=""><a href="224.html"><span class="pn">5</span><span class="pt">معدات</span></a></li>
+            <li data-types=""><a href="225.html"><span class="pn">6</span><span class="pt">قوة</span></a></li>
+            <li data-types=""><a href="226.html"><span class="pn">7</span><span class="pt">المرونة</span></a></li>
+            <li data-types=""><a href="227.html"><span class="pn">8</span><span class="pt">التدريب المتنوع والمتوازن</span></a></li>
+            <li data-types=""><a href="228.html"><span class="pn">9</span><span class="pt">النظام الغذائي</span></a></li>
+            <li data-types=""><a href="229.html"><span class="pn">10</span><span class="pt">الوقاية من اصابات العمل</span></a></li>
+            <li data-types=""><a href="230.html"><span class="pn">11</span><span class="pt">اعتبارات السلامة</span></a></li>
+            <li data-types="ex"><a href="232.html"><span class="pn">12</span><span class="pt">التقييم الذاتي</span><span class="tag tag-self">تقييم ذاتي</span></a></li>
+            <li data-types="sum"><a href="233.html"><span class="pn">13</span><span class="pt">ملخص</span><span class="tag tag-sum">ملخص</span></a></li>
+          </ol>
+        </details>
+        <details class="unit" id="u17">
+          <summary><span class="num">17</span><span class="ut">الإسعافات الأولية</span><span class="um">22 صفحة</span><span class="chev" aria-hidden="true"></span><span class="ubar"><i></i></span></summary>
+          <ol class="pages">
+            <li data-types=""><a href="234.html"><span class="pn">1</span><span class="pt">الإسعافات الأولية</span></a></li>
+            <li data-types=""><a href="235.html"><span class="pn">2</span><span class="pt">مقدمة</span></a></li>
+            <li data-types=""><a href="236.html"><span class="pn">3</span><span class="pt">خلفية</span></a></li>
+            <li data-types=""><a href="237.html"><span class="pn">4</span><span class="pt">ل-ايه بي سي</span></a></li>
+            <li data-types=""><a href="239.html"><span class="pn">5</span><span class="pt">مقدمة</span></a></li>
+            <li data-types=""><a href="240.html"><span class="pn">6</span><span class="pt">وضع جانبي مستقر</span></a></li>
+            <li data-types=""><a href="241.html"><span class="pn">7</span><span class="pt">الالتواء</span></a></li>
+            <li data-types=""><a href="242.html"><span class="pn">8</span><span class="pt">الجروح</span></a></li>
+            <li data-types=""><a href="244.html"><span class="pn">9</span><span class="pt">الكسور</span></a></li>
+            <li data-types=""><a href="245.html"><span class="pn">10</span><span class="pt">الإغماء</span></a></li>
+            <li data-types=""><a href="246.html"><span class="pn">11</span><span class="pt">قضمة الصقيع والحروق</span></a></li>
+            <li data-types=""><a href="247.html"><span class="pn">12</span><span class="pt">الحساسية والسكري والصرع</span></a></li>
+            <li data-types=""><a href="248.html"><span class="pn">13</span><span class="pt">مقدمة</span></a></li>
+            <li data-types=""><a href="249.html"><span class="pn">14</span><span class="pt">عناصر التحكم والإنذارات</span></a></li>
+            <li data-types=""><a href="250.html"><span class="pn">15</span><span class="pt">الإنعاش القلبي الرئوي للبالغين</span></a></li>
+            <li data-types=""><a href="251.html"><span class="pn">16</span><span class="pt">الإنعاش القلبي الرئوي للأطفال</span></a></li>
+            <li data-types=""><a href="252.html"><span class="pn">17</span><span class="pt">مزيل الرجفان</span></a></li>
+            <li data-types=""><a href="253.html"><span class="pn">18</span><span class="pt">انسداد مجرى الهواء</span></a></li>
+            <li data-types=""><a href="254.html"><span class="pn">19</span><span class="pt">فيلم تعليمي</span></a></li>
+            <li data-types=""><a href="255.html"><span class="pn">20</span><span class="pt">1177 معلومات الرعاية الصحية</span></a></li>
+            <li data-types="ex"><a href="256.html"><span class="pn">21</span><span class="pt">التقييم الذاتي</span><span class="tag tag-self">تقييم ذاتي</span></a></li>
+            <li data-types="sum"><a href="257.html"><span class="pn">22</span><span class="pt">ملخص</span><span class="tag tag-sum">ملخص</span></a></li>
+          </ol>
+        </details>
+        <details class="unit" id="u18">
+          <summary><span class="num">18</span><span class="ut">التغذية والصحة</span><span class="um">14 صفحة</span><span class="chev" aria-hidden="true"></span><span class="ubar"><i></i></span></summary>
+          <ol class="pages">
+            <li data-types=""><a href="258.html"><span class="pn">1</span><span class="pt">مقدمة: الأهداف</span></a></li>
+            <li data-types=""><a href="259.html"><span class="pn">2</span><span class="pt">مقدمة (2)</span></a></li>
+            <li data-types=""><a href="260.html"><span class="pn">3</span><span class="pt">خلفية</span></a></li>
+            <li data-types=""><a href="261.html"><span class="pn">4</span><span class="pt">مقدمة</span></a></li>
+            <li data-types=""><a href="262.html"><span class="pn">5</span><span class="pt">الكربوهيدرات</span></a></li>
+            <li data-types=""><a href="263.html"><span class="pn">6</span><span class="pt">الدهون</span></a></li>
+            <li data-types=""><a href="264.html"><span class="pn">7</span><span class="pt">البروتينات</span></a></li>
+            <li data-types=""><a href="265.html"><span class="pn">8</span><span class="pt">الفيتامينات والمعادن</span></a></li>
+            <li data-types=""><a href="267.html"><span class="pn">9</span><span class="pt">دائرة الطعام</span></a></li>
+            <li data-types=""><a href="268.html"><span class="pn">10</span><span class="pt">نموذج اللوحة</span></a></li>
+            <li data-types=""><a href="269.html"><span class="pn">11</span><span class="pt">خطة الوجبات</span></a></li>
+            <li data-types=""><a href="271.html"><span class="pn">12</span><span class="pt">النظام الغذائي والواجبات المدرسية وممارسة الرياضة</span></a></li>
+            <li data-types="ex"><a href="273.html"><span class="pn">13</span><span class="pt">التقييم الذاتي</span><span class="tag tag-self">تقييم ذاتي</span></a></li>
+            <li data-types="sum"><a href="274.html"><span class="pn">14</span><span class="pt">ملخص</span><span class="tag tag-sum">ملخص</span></a></li>
+          </ol>
+        </details>
+        <details class="unit" id="u19">
+          <summary><span class="num">19</span><span class="ut">مُثُل الجسم والمنشطات</span><span class="um">12 صفحة</span><span class="chev" aria-hidden="true"></span><span class="ubar"><i></i></span></summary>
+          <ol class="pages">
+            <li data-types=""><a href="275.html"><span class="pn">1</span><span class="pt">الجسم المثالي</span></a></li>
+            <li data-types=""><a href="276.html"><span class="pn">2</span><span class="pt">مقدمة</span></a></li>
+            <li data-types=""><a href="277.html"><span class="pn">3</span><span class="pt">خلفية</span></a></li>
+            <li data-types=""><a href="278.html"><span class="pn">4</span><span class="pt">مقدمة</span></a></li>
+            <li data-types=""><a href="279.html"><span class="pn">5</span><span class="pt">مُثُل الجسم والصحة</span></a></li>
+            <li data-types=""><a href="280.html"><span class="pn">6</span><span class="pt">مُثُل الجسم وسوء الصحة</span></a></li>
+            <li data-types=""><a href="281.html"><span class="pn">7</span><span class="pt">المثل العليا للجسم والرياضة</span></a></li>
+            <li data-types=""><a href="282.html"><span class="pn">8</span><span class="pt">مقدمة</span></a></li>
+            <li data-types=""><a href="283.html"><span class="pn">9</span><span class="pt">المواد والأساليب المصنفة ضمن المنشطات</span></a></li>
+            <li data-types=""><a href="284.html"><span class="pn">10</span><span class="pt">القوانين واللوائح الأخرى</span></a></li>
+            <li data-types="ex"><a href="286.html"><span class="pn">11</span><span class="pt">التقييم الذاتي</span><span class="tag tag-self">تقييم ذاتي</span></a></li>
+            <li data-types="sum"><a href="287.html"><span class="pn">12</span><span class="pt">ملخص</span><span class="tag tag-sum">ملخص</span></a></li>
+          </ol>
+        </details>
+        <details class="unit" id="u20">
+          <summary><span class="num">20</span><span class="ut">الرياضة والنوع الاجتماعي</span><span class="um">9 صفحات</span><span class="chev" aria-hidden="true"></span><span class="ubar"><i></i></span></summary>
+          <ol class="pages">
+            <li data-types=""><a href="288.html"><span class="pn">1</span><span class="pt">الرياضة والجنس البشري</span></a></li>
+            <li data-types=""><a href="289.html"><span class="pn">2</span><span class="pt">مقدمة</span></a></li>
+            <li data-types=""><a href="290.html"><span class="pn">3</span><span class="pt">خلفية</span></a></li>
+            <li data-types=""><a href="291.html"><span class="pn">4</span><span class="pt">الجنس البشري</span></a></li>
+            <li data-types=""><a href="292.html"><span class="pn">5</span><span class="pt">الأدوار الجندرية</span></a></li>
+            <li data-types=""><a href="293.html"><span class="pn">6</span><span class="pt">منظور علم الأحياء</span></a></li>
+            <li data-types=""><a href="294.html"><span class="pn">7</span><span class="pt">منظور النوع الاجتماعي</span></a></li>
+            <li data-types="ex"><a href="296.html"><span class="pn">8</span><span class="pt">تمرين</span><span class="tag tag-ex">تمرين</span></a></li>
+            <li data-types="sum"><a href="297.html"><span class="pn">9</span><span class="pt">ملخص</span><span class="tag tag-sum">ملخص</span></a></li>
+          </ol>
+        </details>
+      </div>
+    </section>
+    <section class="part">
+      <h3>ملاحق</h3>
+      <div class="units">
+        <details class="unit" id="u21">
+          <summary><span class="num">21</span><span class="ut">ملفات الألعاب الرياضية</span><span class="um">3 صفحات</span><span class="chev" aria-hidden="true"></span><span class="ubar"><i></i></span></summary>
+          <ol class="pages">
+            <li data-types="pdf"><a href="basketboll.html"><span class="pn">1</span><span class="pt">كرة السلة</span><span class="tag tag-pdf">ملف PDF</span></a></li>
+            <li data-types="pdf"><a href="volleyball.html"><span class="pn">2</span><span class="pt">الكرة الطائرة</span><span class="tag tag-pdf">ملف PDF</span></a></li>
+            <li data-types="pdf"><a href="badminton.html"><span class="pn">3</span><span class="pt">الريشة الطائرة</span><span class="tag tag-pdf">ملف PDF</span></a></li>
+          </ol>
+        </details>
+      </div>
+    </section>
+    </div>
+    <p class="empty" id="empty" hidden>لا توجد نتائج مطابقة. جرّب كلمة أخرى.</p>
+  </main>
+  <footer class="foot foot-home"><p>© المنظمة السويدية الدولية للعلوم الرياضية (SIOSS) · دبلوم إعداد معلمي ومعلمات التربية البدنية</p></footer>
+  <script src="assets/js/toc.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
 </body>
 </html>
